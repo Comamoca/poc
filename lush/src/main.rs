@@ -2,8 +2,11 @@ mod lua;
 mod utils;
 
 use std::env;
-use std::io::{stdin, stdout, Write};
+// use std::io::{stdin, stdout, Write};
+use std::fmt;
 use std::path::Path;
+
+use promkit::{build::Builder, crossterm::style, readline, Result};
 
 use whoami;
 
@@ -17,19 +20,34 @@ fn main() {
 }
 
 fn sh(pwd: &Path) {
+    let title = format!(
+        "{}@{}:{}",
+        whoami::username(),
+        whoami::hostname(),
+        pwd.display(),
+    );
+
+    let mut p = readline::Builder::default()
+        .title(title)
+        .title_color(style::Color::DarkGreen)
+        .build()
+        .unwrap();
+
     loop {
-        print!(
-            "{}@{}:{} > ",
-            whoami::username(),
-            whoami::hostname(),
-            pwd.display()
-        );
+        // print!(
+        //     "{}@{}:{} > ",
+        //     whoami::username(),
+        //     whoami::hostname(),
+        //     pwd.display()
+        // );
 
-        stdout().flush().unwrap();
+        let line = p.run().unwrap();
 
-        let mut line = String::new();
-        stdin().read_line(&mut line).expect("Faild to read line");
-        line.remove(line.len() - 1);
+        // stdout().flush().unwrap();
+
+        // let mut line = String::new();
+        // stdin().read_line(&mut line).expect("Faild to read line");
+        // line.remove(line.len() - 1);
 
         lua::lua::lua_eval(&line);
     }
