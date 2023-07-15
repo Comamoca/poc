@@ -26,6 +26,11 @@ The Lua scripting shell.
 
 ## ⛏️   Development
 
+> **Note**
+> require Lua5.4 library.
+> I develop in Manjaro Linux. So, other enviromets may get some errors.
+> If you get error, Please raise an issue. Thankyou!
+
 ```sh
 cargo run
 ```
