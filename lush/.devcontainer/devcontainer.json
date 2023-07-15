@@ -1,0 +1,12 @@
+{
+  "name": "Rust",
+  "dockerFile": "DockerFile",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  }
+}
