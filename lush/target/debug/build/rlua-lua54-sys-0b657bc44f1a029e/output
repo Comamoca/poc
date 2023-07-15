@@ -1,0 +1,109 @@
+TARGET = Some("x86_64-unknown-linux-gnu")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-unknown-linux-gnu")
+cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+CC_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+CC_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+CFLAGS_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+CFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lapi.o" "-c" "lua-5.4.6/src/lapi.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lbaselib.o" "-c" "lua-5.4.6/src/lbaselib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lcode.o" "-c" "lua-5.4.6/src/lcode.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lcorolib.o" "-c" "lua-5.4.6/src/lcorolib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lctype.o" "-c" "lua-5.4.6/src/lctype.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ldblib.o" "-c" "lua-5.4.6/src/ldblib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ldebug.o" "-c" "lua-5.4.6/src/ldebug.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ldo.o" "-c" "lua-5.4.6/src/ldo.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ldump.o" "-c" "lua-5.4.6/src/ldump.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lfunc.o" "-c" "lua-5.4.6/src/lfunc.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lgc.o" "-c" "lua-5.4.6/src/lgc.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/liolib.o" "-c" "lua-5.4.6/src/liolib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/llex.o" "-c" "lua-5.4.6/src/llex.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lmathlib.o" "-c" "lua-5.4.6/src/lmathlib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lauxlib.o" "-c" "lua-5.4.6/src/lauxlib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lmem.o" "-c" "lua-5.4.6/src/lmem.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/loadlib.o" "-c" "lua-5.4.6/src/loadlib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lobject.o" "-c" "lua-5.4.6/src/lobject.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lopcodes.o" "-c" "lua-5.4.6/src/lopcodes.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lparser.o" "-c" "lua-5.4.6/src/lparser.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lstate.o" "-c" "lua-5.4.6/src/lstate.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lstring.o" "-c" "lua-5.4.6/src/lstring.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lstrlib.o" "-c" "lua-5.4.6/src/lstrlib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ltable.o" "-c" "lua-5.4.6/src/ltable.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ltablib.o" "-c" "lua-5.4.6/src/ltablib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ltm.o" "-c" "lua-5.4.6/src/ltm.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lundump.o" "-c" "lua-5.4.6/src/lundump.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lutf8lib.o" "-c" "lua-5.4.6/src/lutf8lib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lvm.o" "-c" "lua-5.4.6/src/lvm.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lzio.o" "-c" "lua-5.4.6/src/lzio.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/loslib.o" "-c" "lua-5.4.6/src/loslib.c"
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "lua-5.4.6/src" "-DLUA_USE_LINUX" "-o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/linit.o" "-c" "lua-5.4.6/src/linit.c"
+exit status: 0
+cargo:rerun-if-env-changed=AR_x86_64-unknown-linux-gnu
+AR_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=AR_x86_64_unknown_linux_gnu
+AR_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-unknown-linux-gnu
+ARFLAGS_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_unknown_linux_gnu
+ARFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: ZERO_AR_DATE="1" "ar" "cq" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/liblua5.4.a" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lapi.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lbaselib.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lcode.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lcorolib.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lctype.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ldblib.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ldebug.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ldo.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ldump.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lfunc.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lgc.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/liolib.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/llex.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lmathlib.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lauxlib.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lmem.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/loadlib.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lobject.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lopcodes.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lparser.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lstate.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lstring.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lstrlib.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ltable.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ltablib.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/ltm.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lundump.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lutf8lib.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lvm.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/lzio.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/loslib.o" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/lua-5.4.6/src/linit.o"
+exit status: 0
+running: "ar" "s" "/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib/liblua5.4.a"
+exit status: 0
+cargo:rustc-link-lib=static=lua5.4
+cargo:rustc-link-search=native=/home/coma/ghq/github.com/coma/poc/lush/target/debug/build/rlua-lua54-sys-0b657bc44f1a029e/out/lib

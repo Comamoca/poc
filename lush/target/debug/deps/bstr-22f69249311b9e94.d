@@ -1,0 +1,15 @@
+/home/coma/ghq/github.com/coma/poc/lush/target/debug/deps/bstr-22f69249311b9e94.rmeta: /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/lib.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/ascii.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/bstr.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/bstring.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/byteset/mod.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/byteset/scalar.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/ext_slice.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/ext_vec.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/impls.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/io.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/utf8.rs
+
+/home/coma/ghq/github.com/coma/poc/lush/target/debug/deps/bstr-22f69249311b9e94.d: /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/lib.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/ascii.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/bstr.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/bstring.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/byteset/mod.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/byteset/scalar.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/ext_slice.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/ext_vec.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/impls.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/io.rs /home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/utf8.rs
+
+/home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/lib.rs:
+/home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/ascii.rs:
+/home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/bstr.rs:
+/home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/bstring.rs:
+/home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/byteset/mod.rs:
+/home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/byteset/scalar.rs:
+/home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/ext_slice.rs:
+/home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/ext_vec.rs:
+/home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/impls.rs:
+/home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/io.rs:
+/home/coma/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bstr-0.2.17/src/utf8.rs:
