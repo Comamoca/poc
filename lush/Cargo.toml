@@ -7,5 +7,5 @@ edition = "2021"
 
 [dependencies]
 promkit = "0.1.2"
-rlua = { version = "0.19.7", default-features = false, features = ["system-lua54"] }
+rlua = "0.19.7"
 whoami = "1.4.1"
