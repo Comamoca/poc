@@ -36,13 +36,13 @@ The Lua scripting shell.
 cargo run
 ```
 
-### DevContainer
+### Devcontainer
 
-This project support DevContainer.
+This project support Devcontainer.
 If you want to use on CLI, please follow this command.
 
 > **Note**
-> Requires [DevContainer CLI](https://github.com/devcontainers/cli)
+> Requires [Devcontainer CLI](https://github.com/devcontainers/cli)
 > If you use npm, run `npm install -g @devcontainers/cli`
 
 ```sh
