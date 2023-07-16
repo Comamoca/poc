@@ -56,7 +56,8 @@ devcontainer exec --workspace-folder . cargo run
 ## 📝 Todo
 
 - [ ] error handling
-- [ ] transplant UI to TUI
+- [ ] ~~transplant UI to TUI~~ Use prompt library
+- [ ] change to prompt library to rustyline
 
 ## 📜 License
 
