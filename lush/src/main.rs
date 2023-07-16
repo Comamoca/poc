@@ -1,12 +1,13 @@
+mod buildin;
 mod lua;
 mod utils;
 
 use std::env;
 // use std::io::{stdin, stdout, Write};
-use std::fmt;
+// use std::fmt;
 use std::path::Path;
 
-use promkit::{build::Builder, crossterm::style, readline, Result};
+use promkit::{build::Builder, crossterm::style, readline};
 
 use whoami;
 
@@ -41,7 +42,7 @@ fn sh(pwd: &Path) {
         //     pwd.display()
         // );
 
-        let line = p.run().unwrap();
+        let line = p.run();
 
         // stdout().flush().unwrap();
 
@@ -49,6 +50,9 @@ fn sh(pwd: &Path) {
         // stdin().read_line(&mut line).expect("Faild to read line");
         // line.remove(line.len() - 1);
 
-        lua::lua::lua_eval(&line);
+        match line {
+            Ok(line) => lua::lua::lua_eval(&line),
+            Err(err) => println!("{}", err),
+        }
     }
 }
