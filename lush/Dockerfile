@@ -14,4 +14,4 @@ WORKDIR /lush
 
 COPY . .
 
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["cargo", "run"]
