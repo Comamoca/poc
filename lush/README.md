@@ -32,8 +32,27 @@ The Lua scripting shell.
 > If you get error, Please raise an issue. Thankyou!
 
 ```sh
+# clone this repository
 cargo run
 ```
+
+### DevContainer
+
+This project support DevContainer.
+If you want to use on CLI, please follow this command.
+
+> **Note**
+> Requires [DevContainer CLI](https://github.com/devcontainers/cli)
+> If you use npm, run `npm install -g @devcontainers/cli`
+
+```sh
+# setup devcontainer
+devcontainer up --workspace-folder .
+
+# run debug build and execute
+devcontainer exec --workspace-folder . cargo run
+```
+
 ## 📝 Todo
 
 - [ ] error handling
