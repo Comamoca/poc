@@ -1,6 +1,6 @@
 mod buildin;
+mod cmd;
 mod lua;
-mod utils;
 
 use std::env;
 // use std::io::{stdin, stdout, Write};
