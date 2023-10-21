@@ -10,6 +10,6 @@ RUN apt-get install -y lua5.4 liblua5.4
 #   chmod +x install.sh && \
 #   ./install.sh -y
 
-WORKDIR /lush
+WORKDIR /luash
 
 COPY .. .
